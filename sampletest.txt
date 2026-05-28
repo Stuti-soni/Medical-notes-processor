@@ -1,0 +1,16 @@
+Patient: Jane Smith, DOB: 1980-06-20
+Date: 2026-05-26
+
+Chief Complaint: Chest pain and shortness of breath
+
+Assessment:
+- Possible early-stage hypertension
+- Mild anemia suspected
+
+Plan:
+1. Order CBC (complete blood count) lab test
+2. Order BMP (basic metabolic panel) lab test
+3. Order chest X-ray
+4. Echocardiogram scheduled
+5. Follow-up appointment in 2 weeks
+6. Refer to cardiologist for further evaluation

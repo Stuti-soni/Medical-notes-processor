@@ -1,0 +1,8 @@
+Patient: John Doe
+Doctor: Dr. Smith
+Date: 2024-01-15
+
+Prescription:
+- CBC (Complete Blood Count) required
+- Chest X-Ray ordered
+- Follow-up with cardiologist in 2 weeks
