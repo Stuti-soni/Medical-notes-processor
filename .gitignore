@@ -26,3 +26,5 @@ backend/uploads/
 # OS
 .DS_Store
 *.swp
+docs/superpowers/
+docs/superpowers/
