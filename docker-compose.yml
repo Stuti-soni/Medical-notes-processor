@@ -46,7 +46,7 @@ services:
 
   worker:
     build: ./backend
-    command: celery -A app.core.celery_app worker --loglevel=info
+    command: celery -A app.core.celery_app worker --loglevel=info -E
     volumes:
       - ./backend:/app
       - uploads_data:/app/uploads
@@ -58,13 +58,14 @@ services:
         condition: service_healthy
 
   flower:
-    image: mher/flower:2.0
-    command: celery flower --broker=${REDIS_URL} --port=5555
+    build: ./backend
+    command: celery -A app.core.celery_app flower --port=5555
     ports:
       - "5555:5555"
     env_file: .env
     depends_on:
       - redis
+      - worker
     profiles:
       - monitoring
 

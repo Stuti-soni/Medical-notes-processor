@@ -20,7 +20,7 @@ export function Timeline({ events }: { events: TimelineEvent[] }) {
           <span className={`absolute -left-2 flex h-4 w-4 items-center justify-center rounded-full ${EVENT_COLORS[e.event_type] ?? "bg-gray-400"}`} />
           <p className="font-medium text-sm">{e.event_type}</p>
           <p className="text-gray-500 text-sm">{e.message}</p>
-          <p className="text-xs text-gray-400">{new Date(e.created_at).toLocaleString()}</p>
+          <p className="text-xs text-gray-400">{new Date(e.created_at + "Z").toLocaleString()}</p>
         </li>
       ))}
     </ol>
